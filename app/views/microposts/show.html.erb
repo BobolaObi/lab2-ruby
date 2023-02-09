@@ -1,13 +1,17 @@
 <p id="notice"><%= notice %></p>
-
+<hr styles:"border:2px solid black;">
 <p>
   <strong>Message:</strong>
   <%= @micropost.message %>
 </p>
 
 <p>
-  <strong>User:</strong>
-  <%= @micropost.user %>
+
+  <strong>This post was made by:</strong>
+  <%= @micropost.user.first_name%>
+  <%= @micropost.user.last_name%>
+   <%= @micropost.user.email%>
+<hr styles:"border:2px solid black;">
 </p>
 
 <%= link_to 'Edit', edit_micropost_path(@micropost) %> |
