@@ -8,9 +8,7 @@
 <p>
 
   <strong>This post was made by:</strong>
-  <%= @micropost.user.first_name%>
-  <%= @micropost.user.last_name%>
-   <%= @micropost.user.email%>
+  <%= link_to @micropost.user.email, @micropost.user %>
 <hr styles:"border:2px solid black;">
 </p>
 
